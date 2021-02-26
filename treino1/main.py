@@ -1,4 +1,6 @@
-#from frequencia import frequencia
+from aloca import aloca
+from apelidos import apelidos
+from frequencia import frequencia
 
 def main():
 
@@ -6,9 +8,8 @@ def main():
     print("<h3>frequencia</h3>")
     texto = "o tempo perguntou ao tempo quanto tempo o tempo tem"
     print("in:",texto)
-#    print("out:",frequencia(texto))
+    print("out:",frequencia(texto))
  
-
 
 if __name__ == '__main__':
     main()

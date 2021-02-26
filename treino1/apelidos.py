@@ -7,15 +7,12 @@ devem ser listadas por ordem lexicográfica do nome completo.
 def apelidos(nomes):
 
     ordN = sorted(nomes, key = str.lower)
-    #['Jorge Manuel Matos Sousa Pinto', 'Jose Bernardo Barros', 'Jose Carlos Bacelar Almeida', 'Manuel Alcino Pereira Cunha', 
-    # 'Maria Joao Frade', 'Xico Esperto']
 
     names = []
 
     for name in ordN:
         names.append(name.split())
-
-    #namesOrdMatrix = sorted(names, key = len)
+        
     namesOrdMatrix = sorted(names, key = lambda x : len(x) - 1)
 
     namesOrd = []

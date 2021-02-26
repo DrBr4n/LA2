@@ -7,14 +7,16 @@ por ordem alfabética.
 
 def frequencia(texto):
 
-    print("outasdsad")
-
-
     words = texto.split()
-
-
-    print(words)
-
     
-     
-    return []
+    words = sorted(words, key = str.lower)
+
+    words = sorted(words, key = lambda w : words.count(w) ,reverse = True)
+
+    result = []
+
+    for word in words:
+        if word not in result:
+            result.append(word)
+
+    return result
