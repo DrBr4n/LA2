@@ -6,13 +6,12 @@ por ordem alfabética.
 '''
 
 def frequencia(texto):
-
     words = texto.split()
     
-    words = sorted(words, key = str.lower)
+    words.sort()
 
     words = sorted(words, key = lambda w : words.count(w) ,reverse = True)
-
+ 
     result = []
 
     for word in words:
@@ -20,3 +19,6 @@ def frequencia(texto):
             result.append(word)
 
     return result
+
+
+
